@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest import mock
 
-import storage
+from access_cards import storage
 
 
 class StorageTestCase(unittest.TestCase):
@@ -166,7 +166,7 @@ class TestPersistence(StorageTestCase):
         original = self.read_file()
 
         storage.create_request("F002", "staff")
-        with mock.patch("storage.os.replace", side_effect=OSError("disk full")):
+        with mock.patch("access_cards.storage.os.replace", side_effect=OSError("disk full")):
             with self.assertRaises(OSError):
                 storage.save_requests(self.path)
 
