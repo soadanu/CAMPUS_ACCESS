@@ -1,6 +1,6 @@
 import sys
-from campusflow.storage import create_request, save_requests, load_requests, get_request
-from campusflow.workflow import approve_request, issue_card, return_card
+from access_cards.storage import create_request, save_requests, load_requests, get_request
+from access_cards.workflow import approve_request, issue_card, return_card
 
 DATA_FILE = "data.json"
 
