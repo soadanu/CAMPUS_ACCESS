@@ -1,4 +1,5 @@
 import sys
+#from access_cards import storage
 from access_cards.storage import create_request, save_requests, load_requests, get_request
 from access_cards.workflow import approve_request, issue_card, return_card
 
@@ -32,18 +33,18 @@ def run_menu():
                 print(f"Success: Created record {record['id']} as {record['status']}")
                 
             elif choice == "2":
-                req_id = input("Enter Request ID (e.g., A001): ").strip()
+                req_id = input("Enter Request ID (e.g., A001): ").strip().upper()
                 approver = input("Enter Approver Staff ID: ")
                 msg = approve_request(req_id, approver)
                 print(msg)
                 
             elif choice == "3":
-                req_id = input("Enter Request ID (e.g., A001): ").strip()
+                req_id = input("Enter Request ID (e.g., A001): ").strip().upper()
                 msg = issue_card(req_id)
                 print(msg)
                 
             elif choice == "4":
-                req_id = input("Enter Request ID (e.g., A001): ").strip()
+                req_id = input("Enter Request ID (e.g., A001): ").strip().upper()
                 msg = return_card(req_id)
                 print(msg)
                 
