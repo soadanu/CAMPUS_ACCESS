@@ -9,7 +9,7 @@ Built with the Python standard library only. No third-party packages are needed.
 | Role | Name | Owns |
 |---|---|---|
 | Engineer A | Solomon Adanu | Request creation, validation, ID generation, lookup, save and load (`storage.py`) |
-| Engineer B | _name here_ | Approve, issue, return and the CLI menu (`workflow.py`) |
+| Engineer B | Nnnenna Uzoezie | Approve, issue, return and the CLI menu (`workflow.py`) |
 
 ## Requirements
 
