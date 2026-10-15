@@ -1,0 +1,9 @@
+[
+  {
+    "id": "A001",
+    "fellow_id": "A001",
+    "card_type": "visitor",
+    "status": "returned",
+    "approved_by": "M01"
+  }
+]

@@ -103,7 +103,7 @@ This log records how AI was used for learning, how each piece of advice was chec
 - **How would I test that a failed save does not overwrite a valid file?** Save a valid file, force the last step of saving to fail, then check the file still has its original content and no temporary file is left behind. My test does this by making `os.replace` raise an error.
 
 
-# AI Learning log
+# AI Learning Log
 
 Engineer B: Nnenna Uzoezie
 
