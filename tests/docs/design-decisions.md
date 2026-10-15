@@ -52,7 +52,7 @@ from access_cards import storage
 B never touches the internal store directly.
 
 **Division of responsibility:**
-- Engineer B owns the **transition rules** (`requested` → `approved` → `issued` → `returned`, no skipping, `returned` is final) and checks them before calling `update_request`.
+- Engineer B owns the **transition rules** (`requested`  `approved`  `issued` → `returned`, no skipping, `returned` is final) and checks them before calling `update_request`.
 - Engineer A owns **data validity**: `update_request` rejects unknown IDs, unknown statuses, and any record that would have no approver once approved.
 
 ### 6. What happens if a saved JSON file is invalid?
