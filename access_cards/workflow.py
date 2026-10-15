@@ -1,3 +1,4 @@
+from access_cards import storage
 def _require_status(request_id, required, action):
     """Fetch the request and check it is in the status this action needs."""
     request = storage.get_request(request_id)
