@@ -68,7 +68,7 @@ This log records how AI was used for learning, how each piece of advice was chec
 
 ## Reflection
 
-**What AI taught me that I did not know before:**
+**What AI taught me that I did not know before:**  ..... 
 - Validate everything first and change the data last, so a failed action leaves nothing changed.
 - `isdigit()` accepts non-ASCII digits, so ID checks need `[0-9]`.
 - Saving through a temporary file and `os.replace` protects a good file from a failed save.
